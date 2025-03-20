@@ -1,0 +1,32 @@
+# System configuration file
+# Contains settings for all components:
+# - Frontend server configuration
+# - Coordinator settings
+# - Worker parameters
+# - Storage configuration
+# - Logging settings
+
+frontend:
+  host: "localhost"
+  port: 8000
+  max_requests: 100
+
+coordinator:
+  host: "localhost"
+  port: 8001
+  heartbeat_interval: 5
+  worker_timeout: 15
+
+worker:
+  host: "localhost"
+  port: 8002
+  threads: 4
+  steal_threshold: 0.7
+
+storage:
+  type: "local"
+  path: "./storage"
+
+logging:
+  level: "INFO"
+  file: "processor.log" 

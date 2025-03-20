@@ -1,0 +1,13 @@
+# Python package dependencies
+# Required libraries:
+# - Flask: Web framework for the frontend
+# - Pillow: Image processing library
+# - PyYAML: YAML configuration parsing
+# - requests: HTTP client library
+# - psutil: System metrics collection
+
+Flask==2.0.1
+Pillow==8.3.1
+PyYAML==5.4.1
+requests==2.26.0
+psutil==5.8.0 

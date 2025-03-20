@@ -1,0 +1,20 @@
+network:
+  frontend_port: 8000
+  coordinator_port: 8001
+  worker_base_port: 8010
+  host: "localhost"
+
+storage:
+  input_path: "./input"
+  output_path: "./output"
+  temp_path: "./temp"
+
+processing:
+  max_image_size: 10485760  # 10MB
+  supported_formats: ["jpg", "png", "webp"]
+  max_workers: 4
+  task_timeout: 30
+
+monitoring:
+  metrics_interval: 5  # seconds
+  log_level: "INFO"
